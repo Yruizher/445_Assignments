@@ -1,8 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema targetNamespace="http://tempuri.org/XMLSchema.xsd"
-    elementFormDefault="qualified"
-    xmlns="http://tempuri.org/XMLSchema.xsd"
-    xmlns:mstns="http://tempuri.org/XMLSchema.xsd"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema"
->
-</xs:schema>
+<xsd:schema xmlns:xsd="https://github.com/Yruizher/445_Assignments/blob/main/Hotels.xsd">
+	<xsd:element Hotels="Hotels">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Hotel" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
+			</xsd:sequence>
+	</xsd:complexType>
+	</xsd:element>
+
+	<xsd:element Hotel="Hotel">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Name" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+				<xsd:element name="Phone" type="xsd:string" minOccurs="1" maxOccurs="unbounded"/>
+				<xsd:element name="Address" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+					<xsd:complexType>
+						<xsd:sequence>
+							<xsd:element name="Number" type="xsd:int" minOccurs="1" maxOccurs="1"/>
+							<xsd:element name="Street" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+							<xsd:element name="City" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+							<xsd:element name="State" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+							<xsd:element name="Zip" type="xsd:int" minOccurs="1" maxOccurs="1"/>
+							<xsd:element name="NearestAirport" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+								<xsd:complexType>
+									<xsd:sequence>
+										<xsd:element name="Airport" type="xsd:string" minOccurs="1" maxOccurs="1"/>
+									</xsd:sequence>
+								</xsd:complexType>
+						</xsd:sequence>
+					</xsd:complexType>
+				<xsd:element name="Rating" type="xsd:string" minOccurs="0" maxOccurs="1"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

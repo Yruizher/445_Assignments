@@ -1,5 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xsd:schema xmlns:xsd= ""
-			>
-
-</xsd:schema>
+<Hotels xmlns="https://github.com/Yruizher/445_Assignments/blob/main/Hotels.xsd">
+	<Hotel>
+		<Name>
+			Days Inn by Wyndham Buckeye
+		</Name>
+		<Phone>
+			623-432-9553
+		</Phone>
+		<Address>
+			<Number>
+				25205
+			</Number>
+			<Street>
+				W Yuma Rd
+			</Street>
+			<City>
+				Buckeye
+			</City>
+			<State>
+				Arizona
+			</State>
+			<Zip>
+				85326
+			</Zip>
+		</Address>
+		<Rating>
+			3.0
+		</Rating>
+	</Hotel>
+</Hotels>
