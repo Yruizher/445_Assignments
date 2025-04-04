@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Xml.Schema;
 using System.Xml;
+using System.Net;
 using Newtonsoft.Json;
 using System.IO;
 
@@ -20,8 +21,9 @@ namespace ConsoleApp1
 
     public class Program
     {
+        //these are the link to the files I have stored in my GitHub. The GitHub is associated to my school account and the repo is public
         public static string xmlURL = "https://github.com/Yruizher/445_Assignments/blob/main/Hotels.xml";
-        public static string xmlErrorURL = "Your Error XML URL"; //Not made yet
+        public static string xmlErrorURL = "https://github.com/Yruizher/445_Assignments/blob/main/HotelsErrors.xml";
         public static string xsdURL = "https://github.com/Yruizher/445_Assignments/blob/main/Hotels.xsd";
 
         public static void Main(string[] args)
@@ -41,7 +43,9 @@ namespace ConsoleApp1
         // Q2.1
         public static string Verification(string xmlUrl, string xsdUrl)
         {
-          
+            //string xmlFromUrl = new WebClient(). DownloadString(xmlUrl);
+            //string xsdFromUrl = new WebClient().DownloadString(xsdUrl);
+
             //making a new XmlSchemaSet class
             XmlSchemaSet schema = new XmlSchemaSet();
 
@@ -64,11 +68,21 @@ namespace ConsoleApp1
             }
 
             //creating XmlReader object
-            XmlReader reader = XmlReader.Create(xmlUrl, hotelSettings);
+            using (XmlReader reader = XmlReader.Create(xmlUrl, hotelSettings))
+            {
+                try
+                {
+                    //parsing the file
+                    while (reader.Read()){ }
+                }
+                catch (Exception ex)
+                {
+                    return "Found Errors";
+                }
+            }
 
-            //parsing the file
-            while (reader.Read()) { }
-            
+            if (is)
+
             //return "No Error" if XML is valid.
             return error;
         }
@@ -76,9 +90,21 @@ namespace ConsoleApp1
         public static string Xml2Json(string xmlUrl)
         {
 
-            string jsonText = "Not Completed Yet";
+            using (WebClient client = new WebClient())
+            {
+                //Will use WebClient to download the xml from the url and then convert into deserializable json string
+                xml = client.DownloadString(xmlUrl);
+                XmlDocument xmlDocument = new XmlDocument();
+                xmlDocument = xmlDocument.LoadXml(xml);
+
+                string jsonString = JsonConvert.SerializeXmlNode(xmlDocument);
+                JObject json = JObject.Parse(jsonString);
+                jsonText = json.ToString();
+                return jsonText;
+            }
+
             // The returned jsonText needs to be de-serializable by Newtonsoft.Json package. (JsonConvert.DeserializeXmlNode(jsonText))
-            return jsonText;
+            
 
         }
     }

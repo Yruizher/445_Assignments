@@ -13,7 +13,6 @@
 		</Address>
 		<Rating>3.0</Rating>
 	</Hotel>
-	
 <!--Hotel Number 2 Has nearest airport-->
 	<Hotel>
 		<Name>Home2 Suites by Hilton Buckeye</Name>
@@ -30,9 +29,7 @@
 		</Address>
 		<Rating>4.5</Rating>
 	</Hotel>
-
 <!--Hotel Number 3 No Airport-->
-
 	<Hotel>
 		<Name>My Place Hotel-Phoenix West/Buckeye, AZ</Name>
 		<Phone>623-440-3661</Phone>
@@ -45,8 +42,6 @@
 		</Address>
 		<Rating>4.3</Rating>
 	</Hotel>
-	
-
 <!--Hotel Number 4 No Airport-->
 	<Hotel>
 		<Name>Premier Inns Tolleson</Name>
@@ -62,7 +57,7 @@
 	</Hotel>
 <!--Hotel Number 5 Has nearest airport-->
 	<Hotel>
-		<Name>Quality Inn & Suites Phoenix NW - Sun City</Name>
+		<Name>Quality Inn and Suites Phoenix NW - Sun City</Name>
 		<Phone>623-933-8211</Phone>
 		<Address>
 			<Number>11202</Number>
@@ -119,7 +114,7 @@
 	</Hotel>
 <!--Hotel Number 9 No Airport, no rating-->
 	<Hotel>
-		<Name>La Quinta Inn & Suites by Wyndham Phoenix West Peoria</Name>
+		<Name>La Quinta Inn and Suites by Wyndham Phoenix West Peoria</Name>
 		<Phone>623-487-1900</Phone>
 		<Address>
 			<Number>16321</Number>
