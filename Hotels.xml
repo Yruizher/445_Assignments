@@ -1,31 +1,147 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Hotels xmlns="https://github.com/Yruizher/445_Assignments/blob/main/Hotels.xsd">
+	<!--Hotel Number 1 No Airport-->
 	<Hotel>
-		<Name>
-			Days Inn by Wyndham Buckeye
-		</Name>
-		<Phone>
-			623-432-9553
-		</Phone>
+		<Name>Days Inn by Wyndham Buckeye</Name>
+		<Phone>623-432-9553</Phone>
 		<Address>
-			<Number>
-				25205
-			</Number>
-			<Street>
-				W Yuma Rd
-			</Street>
-			<City>
-				Buckeye
-			</City>
-			<State>
-				Arizona
-			</State>
-			<Zip>
-				85326
-			</Zip>
+			<Number>25205</Number>
+			<Street>W Yuma Rd</Street>
+			<City>Buckeye</City>
+			<State>Arizona</State>
+			<Zip>85326</Zip>
 		</Address>
-		<Rating>
-			3.0
-		</Rating>
+		<Rating>3.0</Rating>
+	</Hotel>
+	
+<!--Hotel Number 2 Has nearest airport-->
+	<Hotel>
+		<Name>Home2 Suites by Hilton Buckeye</Name>
+		<Phone>623-386-2616</Phone>
+		<Address>
+			<Number>955</Number>
+			<Street>S Watson Rd</Street>
+			<City>Buckeye</City>
+			<State>Arizona</State>
+			<Zip>85326</Zip>
+			<NearestAirport>
+				<Airport>Phoenix Sky Harbor International Airport</Airport>
+			</NearestAirport>
+		</Address>
+		<Rating>4.5</Rating>
+	</Hotel>
+
+<!--Hotel Number 3 No Airport-->
+
+	<Hotel>
+		<Name>My Place Hotel-Phoenix West/Buckeye, AZ</Name>
+		<Phone>623-440-3661</Phone>
+		<Address>
+			<Number>1019</Number>
+			<Street>S Watson Rd</Street>
+			<City>Buckeye</City>
+			<State>Arizona</State>
+			<Zip>85326</Zip>
+		</Address>
+		<Rating>4.3</Rating>
+	</Hotel>
+	
+
+<!--Hotel Number 4 No Airport-->
+	<Hotel>
+		<Name>Premier Inns Tolleson</Name>
+		<Phone>623-533-4660</Phone>
+		<Address>
+			<Number>8399</Number>
+			<Street>W Lynwood St</Street>
+			<City>Tolleson</City>
+			<State>Arizona</State>
+			<Zip>85353</Zip>
+		</Address>
+		<Rating>3.0</Rating>
+	</Hotel>
+<!--Hotel Number 5 Has nearest airport-->
+	<Hotel>
+		<Name>Quality Inn & Suites Phoenix NW - Sun City</Name>
+		<Phone>623-933-8211</Phone>
+		<Address>
+			<Number>11202</Number>
+			<Street>Grand Ave</Street>
+			<City>Youngtown</City>
+			<State>Arizona</State>
+			<Zip>85363</Zip>
+			<NearestAirport>
+				<Airport>Phoenix Sky Harbor International Airport</Airport>
+			</NearestAirport>
+		</Address>
+		<Rating>3.6</Rating>
+	</Hotel>
+<!--Hotel Number 6 No Airport, No Rating-->
+	<Hotel>
+		<Name>Red Roof PLUS+ Phoenix West</Name>
+		<Phone>602-325-9216</Phone>
+		<Address>
+			<Number>5215</Number>
+			<Street>W Willetta St</Street>
+			<City>Phoenix</City>
+			<State>Arizona</State>
+			<Zip>85043</Zip>
+		</Address>
+	</Hotel>
+<!--Hotel Number 7 No Airport-->
+	<Hotel>
+		<Name>Best Western Phoenix Goodyear Inn</Name>
+		<Phone>623-932-3210</Phone>
+		<Address>
+			<Number>55</Number>
+			<Street>N Litchfield Rd</Street>
+			<City>Goodyear</City>
+			<State>Arizona</State>
+			<Zip>85338</Zip>
+		</Address>
+		<Rating>3.9</Rating>
+	</Hotel>
+<!--Hotel Number 8 Has nearest airport-->
+	<Hotel>
+		<Name>The Manhattan at Times Square Hotel</Name>
+		<Phone>212-581-3300</Phone>
+		<Address>
+			<Number>790</Number>
+			<Street>7th Ave</Street>
+			<City>New York</City>
+			<State>New York</State>
+			<Zip>10019</Zip>
+			<NearestAirport>
+				<Airport>LaGuardia Airport</Airport>
+			</NearestAirport>
+		</Address>
+		<Rating>3.1</Rating>
+	</Hotel>
+<!--Hotel Number 9 No Airport, no rating-->
+	<Hotel>
+		<Name>La Quinta Inn & Suites by Wyndham Phoenix West Peoria</Name>
+		<Phone>623-487-1900</Phone>
+		<Address>
+			<Number>16321</Number>
+			<Street>N 83rd Ave</Street>
+			<City>Peoria</City>
+			<State>Arizona</State>
+			<Zip>85382</Zip>
+		</Address>
+	</Hotel>
+<!--Hotel Number 10 Has nearest airport, No rating-->
+	<Hotel>
+		<Name>Hilton Baton Rouge Capitol Center</Name>
+		<Phone>225-344-5866</Phone>
+		<Address>
+			<Number>201</Number>
+			<Street>Lafayette St</Street>
+			<City>Baton Rouge</City>
+			<State>Louisiana</State>
+			<Zip>70801</Zip>
+			<NearestAirport>
+				<Airport>Baton Rouge Metropolitan Airport</Airport>
+			</NearestAirport>
+		</Address>
 	</Hotel>
 </Hotels>
