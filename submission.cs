@@ -6,6 +6,7 @@ using System.IO;
 
 
 
+
 /**
  * This template file is created for ASU CSE445 Distributed SW Dev Assignment 4.
  * Please do not modify or delete any existing class/variable/method names. However, you can add more variables and functions.
@@ -19,9 +20,9 @@ namespace ConsoleApp1
 
     public class Program
     {
-        public static string xmlURL = "Your XML URL";
+        public static string xmlURL = "https://github.com/Yruizher/445_Assignments/blob/main/Hotels.xml";
         public static string xmlErrorURL = "Your Error XML URL";
-        public static string xsdURL = "Your XSD URL";
+        public static string xsdURL = "https://github.com/Yruizher/445_Assignments/blob/main/Hotels.xsd";
 
         public static void Main(string[] args)
         {
@@ -41,7 +42,26 @@ namespace ConsoleApp1
         public static string Verification(string xmlUrl, string xsdUrl)
         {
 
+            XmlSchemaSet schema = new XmlSchemaSet();
+            schema.Add(null, xsdUrl);
 
+            XmlReaderSettings settings = new XmlReaderSettings();
+            settings.Schemas = schema;
+            settings.ValidationType = ValidationType.Schema;
+
+            string error = "No Error";
+
+            settings.ValidationEventHandler = (s, e) =>
+            {
+                error = e.Message;
+            }
+
+            using (XmlReader reader = XmlReader.Create(xmlUrl, settings))
+            {
+                while (reader.Read()) { }
+            }
+
+            return error;
             //return "No Error" if XML is valid. Otherwise, return the desired exception message.
         }
 
