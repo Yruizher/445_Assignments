@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--For my errors, I made the root tag "Hotel" instead of "Hotels". 
+	I took off the required "Number" attribute from all of the hotel's addresses
+	and various other injected errors, such as having a hotel have two names, a hotel missing an address closing tag
+	a hotel missing its phone number-->
 <Hotel xmlns="https://github.com/Yruizher/445_Assignments/blob/main/Hotels.xsd">
 	<!--Hotel Number 1 No Airport-->
 	<Hotel>
