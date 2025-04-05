@@ -20,7 +20,7 @@
 		    <xsd:element name="City" type="xsd:string"/>
 		    <xsd:element name="State" type="xsd:string"/>
 		    <xsd:element name="Zip" type="xsd:string"/>
-		    <xsd:element name="NearestAirport" minOccurs="0">
+		    <xsd:element name="NearstAirport" minOccurs="0">
 		      <xsd:complexType>
 			<xsd:sequence>
 			  <xsd:element name="Airport" type="xsd:string"/>
