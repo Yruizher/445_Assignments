@@ -3,7 +3,7 @@
 	I took off the required "Number" attribute from all of the hotel's addresses
 	and various other injected errors, such as having a hotel have two names, a hotel missing an address closing tag
 	a hotel missing its phone number-->
-<Hotel xmlns="https://github.com/Yruizher/445_Assignments/blob/main/Hotels.xsd">
+<Hotel xmlns="https://raw.githubusercontent.com/Yruizher/445_Assignments/refs/heads/main/Hotels.xsd">
 	<!--Hotel Number 1 No Airport-->
 	<Hotel>
 		<Name>Days Inn by Wyndham Buckeye</Name>
