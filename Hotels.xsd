@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-		targetNamespace="https://github.com/Yruizher/445_Assignments/blob/main/Hotels.xsd"
-		xmlns="https://github.com/Yruizher/445_Assignments/blob/main/Hotels.xsd"
+		targetNamespace="https://raw.githubusercontent.com/Yruizher/445_Assignments/refs/heads/main/Hotels.xsd"
+		xmlns="https://raw.githubusercontent.com/Yruizher/445_Assignments/refs/heads/main/Hotels.xsd"
 	 	elementFormDefault="qualified">
 	
   <xsd:element name="Hotels">
