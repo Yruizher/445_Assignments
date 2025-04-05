@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Hotels xmlns="https://github.com/Yruizher/445_Assignments/blob/main/Hotels.xsd">
+<Hotels xmlns="https://raw.githubusercontent.com/Yruizher/445_Assignments/refs/heads/main/Hotels.xsd">
 	<!--Hotel Number 1 No Airport-->
 	<Hotel>
 		<Name>Days Inn by Wyndham Buckeye</Name>
