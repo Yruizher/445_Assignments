@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-		targetNamespace="https://raw.githubusercontent.com/Yruizher/445_Assignments/refs/heads/main/Hotels.xsd"
-		xmlns="https://raw.githubusercontent.com/Yruizher/445_Assignments/refs/heads/main/Hotels.xsd"
+		targetNamespace="https://github.com/Yruizher/445_Assignments/blob/7b714ccdfb6bd0e7492413097a2c5d1a102baaae/Hotels.xsd"
+		xmlns="https://github.com/Yruizher/445_Assignments/blob/7b714ccdfb6bd0e7492413097a2c5d1a102baaae/Hotels.xsd"
 	 	elementFormDefault="qualified">
 	
   <xsd:element name="Hotels">
