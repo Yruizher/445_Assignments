@@ -22,9 +22,6 @@
 			<City>Buckeye</City>
 			<State>Arizona</State>
 			<Zip>85326</Zip>
-			<NearstAirport>
-				<Airport>Phoenix Sky Harbor International Airport</Airport>
-			</NearstAirport>
 		</Address>
 	</Hotel>
 <!--Hotel Number 3 No Airport, No Rating-->
