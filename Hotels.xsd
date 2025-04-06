@@ -31,7 +31,7 @@
 				<xsd:element name="State" type="xsd:string" minOccurs="1" maxOccurs="1"/>
 				<xsd:element name="Zip" type="xsd:string" minOccurs="1" maxOccurs="1"/>
 			</xsd:sequence>
-			<xsd:attribute name="NearstAirport" type="string" use="required"/>
+			<xsd:attribute name="NearstAirport" type="xsd:string" use="required"/>
 		</xsd:complexType>
 	</xsd:element>
 </xsd:schema>
