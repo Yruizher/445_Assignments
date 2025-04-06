@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Hotels xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:scemaLocation="https://yruizher.github.io/445_Assignments/Hotels.xsd"
+	xsi:schemaLocation="https://yruizher.github.io/445_Assignments/Hotels.xsd"
 	xmlns:ns="https://yruizher.github.io/445_Assignments/Hotels.xsd">
 	<!--Hotel Number 1 No Airport-->
 	<Hotel Rating="3.0">
